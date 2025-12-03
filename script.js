@@ -1,0 +1,2 @@
+// small helper for demo
+document.addEventListener('DOMContentLoaded', ()=>{ const menu = document.querySelector('#menu-btn'); if(menu) menu.onclick=()=>{ document.querySelector('nav').classList.toggle('open') }; const contact = document.getElementById('contactForm'); if(contact) contact.addEventListener('submit', e=>{ e.preventDefault(); alert('Thanks — message sent (demo).'); contact.reset(); }); });
